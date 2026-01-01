@@ -177,5 +177,5 @@ namespace offsets {
     inline constexpr uintptr_t Workspace = 0x178;
     inline constexpr uintptr_t WorkspaceToWorld = 0x3C8;
     inline constexpr uintptr_t viewmatrix = 0x4B0;
-    inline constexpr uintptr_t NextGenReplicatorEnabledWrite4 = 0x67F0C88;
+    inline constexpr uintptr_t NextGenReplicatorEnabledWrite4 = 0x67F0CB8;
 }
