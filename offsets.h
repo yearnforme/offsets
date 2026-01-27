@@ -3,179 +3,256 @@
 #include <iostream>
 using namespace std;
 
-// Roblox Version: version-8b8c34790f814a73
+// Roblox Version: version-f8734e043e1e40a2
 // Byfron Version: ???
 namespace offsets {
-    inline constexpr uintptr_t Adornee = 0xD0;
-    inline constexpr uintptr_t Anchored = 0x1A5;
+
+    inline constexpr uintptr_t Adornee = 0x108;
+    // = Misc::Adornee
+
+    inline constexpr uintptr_t Anchored = 0x1AE;
+    // = BasePart::PrimitiveFlags (bitfield container)
+
     inline constexpr uintptr_t AnchoredMask = 0x2;
+    // = PrimitiveFlags::Anchored
+
     inline constexpr uintptr_t AnimationId = 0xD0;
+    // = Misc::AnimationId
+
     inline constexpr uintptr_t AttributeToNext = 0x58;
+    // = Instance::AttributeToNext
+
     inline constexpr uintptr_t AttributeToValue = 0x18;
-    inline constexpr uintptr_t AutoJumpEnabled = 0x1DB;
-    inline constexpr uintptr_t BanningEnabled = 0x14C;
-    inline constexpr uintptr_t BeamBrightness = 0x190;
-    inline constexpr uintptr_t BeamColor = 0x120;
-    inline constexpr uintptr_t BeamLightEmission = 0x19C;
-    inline constexpr uintptr_t BeamLightInfuence = 0x1A0;
-    inline constexpr uintptr_t CFrame = 0xC0;
+    // = Instance::AttributeToValue
+
     inline constexpr uintptr_t Camera = 0x460;
-    inline constexpr uintptr_t CameraMaxZoomDistance = 0x300;
-    inline constexpr uintptr_t CameraMinZoomDistance = 0x304;
-    inline constexpr uintptr_t CameraMode = 0x308;
-    inline constexpr uintptr_t CameraPos = 0x11C;
-    inline constexpr uintptr_t CameraRotation = 0xF8;
+    // = Workspace::CurrentCamera
+
     inline constexpr uintptr_t CameraSubject = 0xE8;
+    // = Camera::CameraSubject
+
     inline constexpr uintptr_t CameraType = 0x158;
-    inline constexpr uintptr_t CanCollide = 0x1A5;
-    inline constexpr uintptr_t CanCollideMask = 0x8;
-    inline constexpr uintptr_t CanTouch = 0x1A5;
-    inline constexpr uintptr_t CanTouchMask = 0x10;
-    inline constexpr uintptr_t CharacterAppearanceId = 0x2A8;
-    inline constexpr uintptr_t Children = 0x70;
-    inline constexpr uintptr_t ChildrenEnd = 0x8;
-    inline constexpr uintptr_t ClassDescriptor = 0x18;
-    inline constexpr uintptr_t ClassDescriptorToClassName = 0x8;
-    inline constexpr uintptr_t ClickDetectorMaxActivationDistance = 0x100;
-    inline constexpr uintptr_t ClockTime = 0x1B8;
-    inline constexpr uintptr_t CreatorId = 0x188;
-    inline constexpr uintptr_t DataModelDeleterPointer = 0x7FA1990;
-    inline constexpr uintptr_t DataModelPrimitiveCount = 0x438;
-    inline constexpr uintptr_t DataModelToRenderView1 = 0x1D0;
-    inline constexpr uintptr_t DataModelToRenderView2 = 0x8;
-    inline constexpr uintptr_t DataModelToRenderView3 = 0x28;
-    inline constexpr uintptr_t DecalTexture = 0x198;
-    inline constexpr uintptr_t Deleter = 0x10;
-    inline constexpr uintptr_t DeleterBack = 0x18;
-    inline constexpr uintptr_t Dimensions = 0x720;
-    inline constexpr uintptr_t DisplayName = 0x130;
-    inline constexpr uintptr_t EvaluateStateMachine = 0x1DD;
-    inline constexpr uintptr_t FFlagList = 0x7A96EB8;
-    inline constexpr uintptr_t FFlagToValueGetSet = 0x30;
+    // = Camera::CameraType
+
     inline constexpr uintptr_t FieldOfView = 0x160;
-    inline constexpr uintptr_t FakeDataModelPointer = 0x7FA1988;
-    inline constexpr uintptr_t FakeDataModelToDataModel = 0x1C0;
+    // = Camera::FieldOfView
+
+    inline constexpr uintptr_t CameraPos = 0x11C;
+    // = Camera::Position
+
+    inline constexpr uintptr_t CameraRotation = 0xF8;
+    // = Camera::Rotation
+
+    inline constexpr uintptr_t CanCollideMask = 0x8;
+    // = PrimitiveFlags::CanCollide
+
+    inline constexpr uintptr_t CanTouchMask = 0x10;
+    // = PrimitiveFlags::CanTouch
+
+    inline constexpr uintptr_t Children = 0x70;
+    // = Instance::ChildrenStart
+
+    inline constexpr uintptr_t ChildrenEnd = 0x8;
+    // = Instance::ChildrenEnd
+
+    inline constexpr uintptr_t ClassDescriptor = 0x18;
+    // = Instance::ClassDescriptor
+
+    inline constexpr uintptr_t ClassDescriptorToClassName = 0x8;
+    // = Instance::ClassName
+
+    inline constexpr uintptr_t ClickDetectorMaxActivationDistance = 0x100;
+    // = ClickDetector::MaxActivationDistance
+
+    inline constexpr uintptr_t ClockTime = 0x1B8;
+    // = Lighting::ClockTime
+
+    inline constexpr uintptr_t CreatorId = 0x188;
+    // = DataModel::CreatorId
+
+    inline constexpr uintptr_t DataModelPrimitiveCount = 0x438;
+    // = DataModel::PrimitiveCount
+
+    inline constexpr uintptr_t DecalTexture = 0x198;
+    // = Textures::Decal_Texture
+
+    inline constexpr uintptr_t Dimensions = 0x720;
+    // = VisualEngine::Dimensions
+
+    inline constexpr uintptr_t DisplayName = 0x130;
+    // = Player::DisplayName
+
     inline constexpr uintptr_t FogColor = 0xFC;
+    // = Lighting::FogColor
+
     inline constexpr uintptr_t FogEnd = 0x134;
+    // = Lighting::FogEnd
+
     inline constexpr uintptr_t FogStart = 0x138;
-    inline constexpr uintptr_t ForceNewAFKDuration = 0x1F8;
-    inline constexpr uintptr_t FramePositionOffsetX = 0x52C;
-    inline constexpr uintptr_t FramePositionOffsetY = 0x534;
-    inline constexpr uintptr_t FramePositionX = 0x528;
-    inline constexpr uintptr_t FramePositionY = 0x530;
+    // = Lighting::FogStart
+
     inline constexpr uintptr_t FrameRotation = 0x188;
-    inline constexpr uintptr_t FrameSizeOffsetX = 0x550;
-    inline constexpr uintptr_t FrameSizeOffsetY = 0x554;
-    inline constexpr uintptr_t FrameSizeX = 0x548;
-    inline constexpr uintptr_t FrameSizeY = 0x54C;
-    inline constexpr uintptr_t FrameVisible = 0x5C1;
+    // = GuiObject::Rotation
+
     inline constexpr uintptr_t GameId = 0x190;
-    inline constexpr uintptr_t GameLoaded = 0x630;
+    // = DataModel::GameId
+
+    inline constexpr uintptr_t GameLoaded = 0x5F8;
+    // = DataModel::GameLoaded
+
     inline constexpr uintptr_t Gravity = 0x9B8;
+    // = Workspace::ReadOnlyGravity
+
     inline constexpr uintptr_t Health = 0x194;
-    inline constexpr uintptr_t HealthDisplayDistance = 0x328;
+    // = Humanoid::Health
+
     inline constexpr uintptr_t HipHeight = 0x1A0;
-    inline constexpr uintptr_t HumanoidDisplayName = 0xD0;
+    // = Humanoid::HipHeight
+
     inline constexpr uintptr_t HumanoidState = 0x8D8;
-    inline constexpr uintptr_t HumanoidStateId = 0x20;
-    inline constexpr uintptr_t InputObject = 0x100;
-    inline constexpr uintptr_t InsetMaxX = 0x100;
-    inline constexpr uintptr_t InsetMaxY = 0x104;
-    inline constexpr uintptr_t InsetMinX = 0xF8;
-    inline constexpr uintptr_t InsetMinY = 0xFC;
-    inline constexpr uintptr_t InstanceAttributePointer1 = 0x48;
-    inline constexpr uintptr_t InstanceAttributePointer2 = 0x18;
-    inline constexpr uintptr_t InstanceCapabilities = 0x280;
-    inline constexpr uintptr_t JobEnd = 0x1D8;
+    // = Humanoid::HumanoidState
+
+    inline constexpr uintptr_t InputObject = 0x0;
+    // = MouseService::InputObject
+
     inline constexpr uintptr_t JobId = 0x138;
+    // = DataModel::JobId
+
     inline constexpr uintptr_t JobStart = 0x1D0;
+    // = TaskScheduler::JobStart
+
+    inline constexpr uintptr_t JobEnd = 0x1D8;
+    // = TaskScheduler::JobEnd
+
     inline constexpr uintptr_t Job_Name = 0x18;
-    inline constexpr uintptr_t JobsPointer = 0x8058020;
+    // = TaskScheduler::JobName
+
     inline constexpr uintptr_t JumpPower = 0x1B0;
+    // = Humanoid::JumpPower
+
     inline constexpr uintptr_t LocalPlayer = 0x130;
-    inline constexpr uintptr_t LocalScriptByteCode = 0x1A8;
-    inline constexpr uintptr_t LocalScriptBytecodePointer = 0x10;
-    inline constexpr uintptr_t LocalScriptHash = 0x1B8;
-    inline constexpr uintptr_t MaterialType = 0x246;
+    // = Player::LocalPlayer
+
+    inline constexpr uintptr_t MaterialType = 0x0;
+    // = BasePart::Material
+
     inline constexpr uintptr_t MaxHealth = 0x1B4;
-    inline constexpr uintptr_t MaxSlopeAngle = 0x1B8;
-    inline constexpr uintptr_t MeshPartColor3 = 0x194;
+    // = Humanoid::MaxHealth
+
     inline constexpr uintptr_t MeshPartTexture = 0x318;
+    // = MeshPart::Texture
+
     inline constexpr uintptr_t ModelInstance = 0x370;
-    inline constexpr uintptr_t ModuleScriptByteCode = 0x150;
-    inline constexpr uintptr_t ModuleScriptBytecodePointer = 0x10;
-    inline constexpr uintptr_t ModuleScriptHash = 0x160;
+    // = Player::ModelInstance
+
     inline constexpr uintptr_t MoonTextureId = 0xE0;
-    inline constexpr uintptr_t MousePosition = 0xEC;
-    inline constexpr uintptr_t MouseSensitivity = 0x8001970;
+    // = Sky::MoonTextureId
+
     inline constexpr uintptr_t MoveDirection = 0x158;
+    // = Humanoid::MoveDirection
+
     inline constexpr uintptr_t Name = 0xB0;
-    inline constexpr uintptr_t NameDisplayDistance = 0x334;
-    inline constexpr uintptr_t NameSize = 0x10;
-    inline constexpr uintptr_t OnDemandInstance = 0x40;
-    inline constexpr uintptr_t OutdoorAmbient = 0x108;
+    // = Instance::Name
+
     inline constexpr uintptr_t Parent = 0x68;
-    inline constexpr uintptr_t PartSize = 0x1B0;
-    inline constexpr uintptr_t Ping = 0xCC;
-    inline constexpr uintptr_t PlaceId = 0x198;
-    inline constexpr uintptr_t PlayerConfigurerPointer = 0x7F7FCE8;
-    inline constexpr uintptr_t PlayerMouse = 0xCE8;
+    // = Instance::Parent
+
     inline constexpr uintptr_t Position = 0xE4;
+    // = BasePart::Position
+
     inline constexpr uintptr_t Primitive = 0x148;
-    inline constexpr uintptr_t PrimitiveValidateValue = 0x6;
-    inline constexpr uintptr_t PrimitivesPointer1 = 0x3D8;
-    inline constexpr uintptr_t PrimitivesPointer2 = 0x240;
-    inline constexpr uintptr_t ProximityPromptActionText = 0xD0;
-    inline constexpr uintptr_t ProximityPromptEnabled = 0x156;
-    inline constexpr uintptr_t ProximityPromptGamepadKeyCode = 0x13C;
-    inline constexpr uintptr_t ProximityPromptHoldDuraction = 0x140;
+    // = BasePart::Primitive
+
     inline constexpr uintptr_t ProximityPromptMaxActivationDistance = 0x148;
-    inline constexpr uintptr_t ProximityPromptMaxObjectText = 0xF0;
-    inline constexpr uintptr_t RenderJobToDataModel = 0x1B0;
-    inline constexpr uintptr_t RenderJobToFakeDataModel = 0x38;
-    inline constexpr uintptr_t RenderJobToRenderView = 0x218;
-    inline constexpr uintptr_t RequireBypass = 0x0;
+    // = ProximityPrompt::MaxActivationDistance
+
     inline constexpr uintptr_t RigType = 0x1C8;
-    inline constexpr uintptr_t RootPartR15 = 0x620;
-    inline constexpr uintptr_t RootPartR6 = 0x4C0;
-    inline constexpr uintptr_t Rotation = 0xC8;
-    inline constexpr uintptr_t RunContext = 0x148;
-    inline constexpr uintptr_t Sandboxed = 0xC5;
-    inline constexpr uintptr_t ScreenGuiEnabled = 0x654;
-    inline constexpr uintptr_t ScriptContext = 0x3F0;
-    inline constexpr uintptr_t Sit = 0x1DC;
+    // = Humanoid::RigType
+
+    inline constexpr uintptr_t Rotation = 0xC0;
+    // = BasePart::Rotation
+
     inline constexpr uintptr_t SkyboxBk = 0x110;
+    // = Sky::SkyboxBk
+
     inline constexpr uintptr_t SkyboxDn = 0x140;
+    // = Sky::SkyboxDn
+
     inline constexpr uintptr_t SkyboxFt = 0x170;
+    // = Sky::SkyboxFt
+
     inline constexpr uintptr_t SkyboxLf = 0x1A0;
+    // = Sky::SkyboxLf
+
     inline constexpr uintptr_t SkyboxRt = 0x1D0;
+    // = Sky::SkyboxRt
+
     inline constexpr uintptr_t SkyboxUp = 0x200;
+    // = Sky::SkyboxUp
+
     inline constexpr uintptr_t SoundId = 0xE0;
+    // = Sky::MoonTextureId
+
     inline constexpr uintptr_t StarCount = 0x260;
+    // = Sky::StarCount
+
     inline constexpr uintptr_t StringLength = 0x10;
+    // = Misc::StringLength
+
     inline constexpr uintptr_t SunTextureId = 0x230;
-    inline constexpr uintptr_t TagList = 0x0;
-    inline constexpr uintptr_t TaskSchedulerMaxFPS = 0x1B0;
-    inline constexpr uintptr_t TaskSchedulerPointer = 0x8057E48;
+    // = Sky::SunTextureId
+
     inline constexpr uintptr_t Team = 0x280;
-    inline constexpr uintptr_t TeamColor = 0xD0;
-    inline constexpr uintptr_t TextLabelText = 0xAC8;
-    inline constexpr uintptr_t TextLabelVisible = 0x5C1;
-    inline constexpr uintptr_t Tool_Grip_Position = 0x494;
+    // = Player::Team
+
     inline constexpr uintptr_t Transparency = 0xF0;
-    inline constexpr uintptr_t UserId = 0x2B8;
+    // = BasePart::Transparency
+
+    inline constexpr uintptr_t UserId = 0x2A8;
+    // = Player::UserId
+
     inline constexpr uintptr_t Value = 0xD0;
-    inline constexpr uintptr_t ValueGetSetToValue = 0xC0;
+    // = Misc::Value
+
     inline constexpr uintptr_t Velocity = 0xF0;
+    // = BasePart::AssemblyLinearVelocity
+
     inline constexpr uintptr_t ViewportSize = 0x2E8;
-    inline constexpr uintptr_t VisualEngine = 0x10;
+    // = MeshPart::MeshId (shared container)
+
     inline constexpr uintptr_t VisualEnginePointer = 0x7A7F950;
-    inline constexpr uintptr_t VisualEngineToDataModel1 = 0x700;
-    inline constexpr uintptr_t VisualEngineToDataModel2 = 0x1C0;
+    // = VisualEngine::Pointer
+
     inline constexpr uintptr_t WalkSpeed = 0x1D4;
+    // = Humanoid::Walkspeed
+
     inline constexpr uintptr_t WalkSpeedCheck = 0x3C0;
+    // = Humanoid::WalkspeedCheck
+
     inline constexpr uintptr_t Workspace = 0x178;
-    inline constexpr uintptr_t WorkspaceToWorld = 0x3D8;
+    // = DataModel::Workspace
+
     inline constexpr uintptr_t viewmatrix = 0x4B0;
+    // = VisualEngine::ViewMatrix
+
     inline constexpr uintptr_t NextGenReplicatorEnabledWrite4 = 0x6804F58;
+    // = UNMATCHED (Global / Replicator / Engine flag)
+
+    inline constexpr uintptr_t PlayerConfigurerPointer = 0x7F7FCE8;
+    // = PlayerConfigurer::Pointer
+
+    inline constexpr uintptr_t MouseSensitivity = 0x8001970;
+    // = MouseService::SensitivityPointer
+
+    inline constexpr uintptr_t RequireBypass = 0x0;
+    // = Misc::RequireLock
+
+    inline constexpr uintptr_t TagList = 0x0;
+    // = UNMATCHED (engine container / reserved)
+
+    inline constexpr uintptr_t DataModelDeleterPointer = 0x7FA1990;
+    // = UNMATCHED (engine internal)
+
+    inline constexpr uintptr_t FakeDataModelPointer = 0x7FA1988;
+    // = FakeDataModel::Pointer
 }
