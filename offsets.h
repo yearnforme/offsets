@@ -1,3 +1,8 @@
+#pragma once
+#include <cstdint>
+#include <iostream>
+using namespace std;
+
 // Roblox Version: version-4464ba36ceea461e
 // Byfron Version: ???
 namespace offsets {
