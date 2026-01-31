@@ -4,7 +4,7 @@
 using namespace std;
 
 // Roblox Version: version-db4634f0e27d4d36
-// Byfron Version: ???
+// Byfron Version: Nigga4.0
 namespace offsets {
     inline constexpr uintptr_t Adornee = 0xD0;
     inline constexpr uintptr_t Anchored = 0x1AE;
