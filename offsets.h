@@ -2,7 +2,7 @@
 #include <cstdint>
 #include <string>
 namespace Offsets {
-     inline std::string ClientVersion = "version-80c7b8e578f241f";
+     inline std::string ClientVersion = "version-80c7b8e578f241ff";
  
      namespace AnimationTrack {
           inline constexpr uintptr_t Animation = 0xd0;
