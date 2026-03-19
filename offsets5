@@ -254,6 +254,7 @@ namespace Offsets {
          inline constexpr uintptr_t ByteCode = 0x1a8;
          inline constexpr uintptr_t GUID = 0xe8;
          inline constexpr uintptr_t Hash = 0x1b8;
+         inline constexpr uintptr_t Disabled = 0x14C;
     }
 
     namespace MaterialColors {
