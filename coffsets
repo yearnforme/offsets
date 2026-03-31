@@ -32,7 +32,5 @@ namespace cs2
 
 		constexpr uintptr_t m_pObserverServices = 0x13F0;
 		constexpr uintptr_t m_hObserverTarget   = 0x4C;
-
-		constexpr uintptr_t m_vecAbsVelocity    = 0x404;
 	}
 }
