@@ -22,6 +22,7 @@ namespace cs2
 		constexpr uintptr_t m_vOldOrigin                 = 0x1588;
 
 		constexpr uintptr_t m_pGameSceneNode             = 0x338;
+		constexpr uintptr_t m_vecAbsOrigin               = 0xD0;
 		constexpr uintptr_t m_modelState                 = 0x160;
 		constexpr uintptr_t m_hController                = 0x15A0;
 		constexpr uintptr_t m_iszPlayerName              = 0x6F8;
