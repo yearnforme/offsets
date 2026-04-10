@@ -25,8 +25,21 @@ namespace cs2
 		constexpr uintptr_t m_hController          = 0x15A0;
 		constexpr uintptr_t m_iszPlayerName        = 0x6F8;
 
-		constexpr uintptr_t m_vecVelocity          = 0x398; 
+		constexpr uintptr_t m_vecVelocity          = 0x398;
 		constexpr uintptr_t m_flThrowStrength      = 0x113C;
+
+		constexpr uintptr_t m_bRedraw              = 0x1130;
+		constexpr uintptr_t m_bIsHeldByPlayer      = 0x1131;
+		constexpr uintptr_t m_bPinPulled           = 0x1132;
+		constexpr uintptr_t m_bJumpThrow           = 0x1133;
+		constexpr uintptr_t m_bThrowAnimating      = 0x1134;
+		constexpr uintptr_t m_fThrowTime           = 0x1138;
+		constexpr uintptr_t m_fDropTime            = 0x1140;
+		constexpr uintptr_t m_fPinPullTime         = 0x1144;
+		constexpr uintptr_t m_bJustPulledPin       = 0x1148;
+		constexpr uintptr_t m_nNextHoldTick        = 0x114C;
+		constexpr uintptr_t m_flNextHoldFrac       = 0x1150;
+		constexpr uintptr_t m_hSwitchToWeaponAfterThrow = 0x1154;
 
 		constexpr uintptr_t m_pWeaponServices      = 0x13D8;
 		constexpr uintptr_t m_hActiveWeapon        = 0x60;
