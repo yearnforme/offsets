@@ -50,6 +50,7 @@ namespace cs2
 
 		constexpr uintptr_t m_pWeaponServices            = 0x13D8;
 		constexpr uintptr_t m_hActiveWeapon              = 0x60;
+		constexpr uintptr_t m_hOwnerEntity               = 0x3E4;
 		constexpr uintptr_t m_AttributeManager           = 0x1378;
 		constexpr uintptr_t m_Item                       = 0x50;
 		constexpr uintptr_t m_iItemDefinitionIndex       = 0x1BA;
