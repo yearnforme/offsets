@@ -48,6 +48,7 @@ namespace cs2
 		constexpr uintptr_t m_nBombSite                  = 0xA30;
 		constexpr uintptr_t m_bBombPlantedHere           = 0x8DA;
         constexpr uintptr_t m_flFlashMaxAlpha            = 0x15F4;
+        constexpr uintptr_t m_flFlashDuration            = 0x15F8;
 
 		constexpr uintptr_t m_pWeaponServices            = 0x13D8;
 		constexpr uintptr_t m_hActiveWeapon              = 0x60;
