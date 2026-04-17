@@ -11,6 +11,7 @@ namespace cs2
 		constexpr uintptr_t dwViewAngles                 = 0x231E9B8;
 		constexpr uintptr_t dwGlobalVars                 = 0x2062540;
 		constexpr uintptr_t dwPlantedC4                  = 0x231BAB0;
+        constexpr uintptr_t dwForceJump                  = 0x0; 
 
 		constexpr uintptr_t m_iTeamNum                   = 0x3F3;
 		constexpr uintptr_t m_hPlayerPawn                = 0x90C;
@@ -62,5 +63,7 @@ namespace cs2
 
 		constexpr uintptr_t m_pCameraServices            = 0x1410;
 		constexpr uintptr_t m_iFOV                       = 0x290;
+
+        constexpr uintptr_t m_fFlags                     = 0x388;
 	}
 }
