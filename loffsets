@@ -64,6 +64,6 @@ namespace cs2
 		constexpr uintptr_t m_pCameraServices            = 0x1410;
 		constexpr uintptr_t m_iFOV                       = 0x290;
 
-        constexpr uintptr_t m_fFlags                     = 0x388;
+        constexpr uintptr_t m_fFlags                     = 0x400;
 	}
 }
