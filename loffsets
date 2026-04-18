@@ -63,5 +63,18 @@ namespace cs2
 
 		constexpr uintptr_t m_pCameraServices            = 0x1410;
 		constexpr uintptr_t m_iFOV                       = 0x290;
+
+        constexpr uintptr_t m_nFallbackPaintKit          = 0x1850;
+        constexpr uintptr_t m_nFallbackSeed              = 0x1854;
+        constexpr uintptr_t m_flFallbackWear             = 0x1858;
+        constexpr uintptr_t m_nFallbackStatTrak          = 0x185C;
+        constexpr uintptr_t m_iItemIDHigh                = 0x1D0;
+        constexpr uintptr_t m_AttributeList              = 0x208;
+        constexpr uintptr_t m_Attributes                 = 0x8;
+        constexpr uintptr_t m_hMyWeapons                 = 0x48;
+        constexpr uintptr_t m_MeshGroupMask              = 0x220;
+        constexpr uintptr_t m_pInventoryServices         = 0x810;
+        constexpr uintptr_t dwLocalPlayerController      = 0x22ECA18;
+
 	}
 }
