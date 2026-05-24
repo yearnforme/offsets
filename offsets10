@@ -2,7 +2,6 @@
 #include <cstdint>
 #include <string>
 namespace Offsets {
-namespace Offsets {
     inline std::string ClientVersion = "version-2b1721d47abf49aa";
 
     namespace AirProperties {
